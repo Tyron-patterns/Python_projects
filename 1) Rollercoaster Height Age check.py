@@ -54,10 +54,13 @@ if height >= 120:
             else:
                 break
     price = 0
-    if age in range(18,76): #checks if the height from the input is in the correct range
-        price = 12
-        print(f"The price of the ticket is {price}$! Enjoy the ride!")
+     if age in range(18,76) and 45 <= age <= 55: #condition for different ages
+        price = 0
+        print(f"The ticket for people between the age of 45 and 55 is free! Enjoy the ride!")
         print("")
+    elif age in range(18,76):
+        price +=12
+        print(f"The price of the ticket is {price}$! Enjoy the ride!")
     elif 12 <= age < 18:
         price = 7
         print(f"The price of the ticket is {price}$! Enjoy the ride!")
@@ -141,6 +144,9 @@ if height >= 120:
             price = 7
             print(f"The price of the ticket is {price}$! Enjoy the ride!")
             print("")
+        elif age in range(45,56):
+            price = 0
+            print(f"The ticket for people between the age of 45 and 55 is free! Enjoy the ride!")
         else:
             price = 12
             print(f"The price of the ticket is {price}$! Enjoy the ride!")
