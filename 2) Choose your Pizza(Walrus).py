@@ -8,20 +8,20 @@ print("Welcome to Tyron Pizza Deliveries! \n")
 
 # Prompt the user for pizza size and validate input
 size = input("What size pizza do you want? S, M or L: \n").upper()
-price = 0
+bill = 0
 while size not in ['S','M','L']:
     size = input("Please, choose among the available options S,M or L").upper()
 
 # Set base price depending on pizza size
 if size == "L":
-    price += 25
-    print(f"The price for a Large pizza is ${price}\n")
+    bill += 25
+    print(f"The price for a Large pizza is ${bill}\n")
 elif size == "M":
-    price += 20
-    print(f"The price for a Medium pizza is ${price}\n")
+    bill += 20
+    print(f"The price for a Medium pizza is ${bill}\n")
 else:
-    price += 15
-    print(f"The price for a Small pizza is ${price}\n")
+    bill += 15
+    print(f"The price for a Small pizza is ${bill}\n")
 
 # Ask if user wants pepperoni and validate input
 pepperoni = input("Do you want pepperoni on your pizza? Y or N: \n").upper()
@@ -30,14 +30,14 @@ while pepperoni not in ["Y","N"]:
 
 # Add price for pepperoni based on pizza size
 if pepperoni == "Y" and size=="S":
-    price += 2
-    print(f"The total price is now {price}\n")
+    bill += 2
+    print(f"The total bill is now {bill}\n")
 elif pepperoni == "Y" and size in ["M", "L"]:
-    price += 3
-    print(f"The total price is now {price}\n")
+    bill += 3
+    print(f"The total bill is now {bill}\n")
 else:
-    price += 0
-    print(f"The total price remains the same: ${price}\n")
+    bill += 0
+    print(f"The total bill remains the same: ${bill}\n")
 
 # Ask if user wants extra cheese and validate input
 extra_cheese = input("Do you want extra cheese? Y or N: \n").upper()
@@ -46,11 +46,11 @@ while extra_cheese not in ["Y","N"]:
 
 # Add price for extra cheese if selected
 if extra_cheese == "Y":
-    price += 1
-    print(f"The total price is now ${price}\n")
+    bill += 1
+    print(f"The total bill is now ${bill}\n")
 else:
-    price += 0
-    print(f"The total price remains the same: ${price}\n")
+    bill += 0
+    print(f"The total bill remains the same: ${bill}\n")
 
 
 
@@ -71,16 +71,16 @@ while (size := input("What size pizza do you want? S, M or L: \n").upper()) not 
     print('The size you entered is not valid, please try again!')
 
 # Set base price depending on pizza size
-price = 0
+bill = 0
 if size == "L":
-    price += 25
-    print(f"The price for a Large pizza is ${price}\n")
+    bill += 25
+    print(f"The price for a Large pizza is ${bill}\n")
 elif size == "M":
-    price += 20
-    print(f"The price for a Medium pizza is ${price}\n")
+    bill += 20
+    print(f"The price for a Medium pizza is ${bill}\n")
 else:
-    price += 15
-    print(f"The price for a Small pizza is ${price}\n")
+    bill += 15
+    print(f"The price for a Small pizza is ${bill}\n")
 
 # Ask for pepperoni using walrus operator for input validation
 valid_pepperoni = ["Y","N"]
@@ -89,14 +89,14 @@ while (pepperoni := input("Do you want to add pepperoni? Y or N?: \n").upper()) 
 
 # Add pepperoni price based on pizza size
 if pepperoni == "Y" and size=="S":
-    price += 2
-    print(f"The total price is now {price}\n")
+    bill += 2
+    print(f"The total bill is now {bill}\n")
 elif pepperoni == "Y" and size in ["M", "L"]:
-    price += 3
-    print(f"The total price is now {price}\n")
+    bill += 3
+    print(f"The total bill is now {bill}\n")
 else:
-    price += 0
-    print(f"The total price remains the same: ${price}\n")
+    bill += 0
+    print(f"The total bill remains the same: ${bill}\n")
 
 # Ask for extra cheese using walrus operator
 valid_extra_cheese = ["Y","N"]
@@ -105,9 +105,9 @@ while (extra_cheese := input("Do you want to add cheese? Y or N\n").upper()) not
 
 # Add cheese price if selected
 if extra_cheese == "Y":
-    price += 1
-    print(f"The total price is now ${price}\n")
+    bill += 1
+    print(f"The total bill is now ${bill}\n")
 else:
-    price += 0
-    print(f"The total price remains the same: ${price}\n")
+    bill += 0
+    print(f"The total bill remains the same: ${bill}\n")
 
