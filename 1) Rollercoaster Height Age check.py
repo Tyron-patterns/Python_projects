@@ -22,7 +22,7 @@ height = -1
 
 while not (0 <= height <= 250): #restarts the procedure of asking for the height. Loop until height is valid
     try: #prompts the user to input the correct value. Try converting to float
-        height = float(input("What is your height in cm? \n"))
+        height = float(input("What is your height in cm? \n")) #converts the string from the input into float
         print("")
 
         if 0 <= height <= 250: #checks if the height from the input is in the correct range -> exit
@@ -32,7 +32,7 @@ while not (0 <= height <= 250): #restarts the procedure of asking for the height
             print("")
             continue
 
-    except ValueError: #not a number -> restart the whil -> try again
+    except ValueError: #not a number -> restart the while -> try again
         print("Please, insert a valid number between 0 and 250!")
 
 # If the height is acceptable, ask for age
