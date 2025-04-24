@@ -34,6 +34,8 @@ while not (0 <= height <= 250): #restarts the procedure of asking for the height
 
     except ValueError: #not a number -> restart the while -> try again
         print("Please, insert a valid number between 0 and 250!")
+# The except inside a loop works like a continue: when the exception is encountered the loop starts again after exectuing the except block
+# The except outside the loop, it just execute its block and keep going to the following command
 
 # If the height is acceptable, ask for age
 if height >= 120:
