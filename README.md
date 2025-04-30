@@ -1,10 +1,12 @@
 # 🐍 Python Practice Projects
 
-This repository contains a collection of small Python coding exercises and mini-projects. While many of these started as challenges from a course I attended, I completed them independently — using minimal external help aside from researching specific functions or syntax.
+This repository contains a collection of small Python coding exercises and mini-projects. While many of these started as challenges from courses I attended, I completed them independently — using minimal external help aside from researching specific functions or syntax.
 
-My goal was not just to follow instructions, but to understand the logic behind each problem and solve it on my own. 
-
-✅<mark> In most cases, I extended the exercises beyond their original scope to explore more advanced solutions or improve the structure. </mark>✅
+> **Note:** My goal throughout this project was not merely to follow instructions, but to deeply understand the underlying logic of each problem and develop my own solutions.
+> 
+> **⚠️ In many cases,** I went beyond the original exercise requirements to explore more advanced approaches, optimize the structure, or test additional edge cases.
+> 
+> As a result, many of the exercises in this repository significantly exceed the original scope of the course's challenges.
 
 These are not full-scale applications, but rather individual coding exercises that reflect my learning process, creativity, and growing confidence in Python.
 
@@ -13,7 +15,7 @@ These are not full-scale applications, but rather individual coding exercises th
 ## 🚀 Highlights
 - Built independently from scratch
 - Minimal guidance — focused on self-learning
-- Some projects go beyond the challenge requirements
+- Many projects go beyond the challenge requirements
 - Organized as standalone files for clarity
 
 ---
