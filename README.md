@@ -4,7 +4,7 @@ This repository contains a collection of small Python coding exercises and mini-
 
 > **Note:** My goal throughout this project was not merely to follow instructions, but to deeply understand the underlying logic of each problem and develop my own solutions.
 > 
-> **⚠️ In many cases,** I went beyond the original exercise requirements to explore more advanced approaches, optimize the structure, or test additional edge cases.
+> ***⚠️ In most cases, I went beyond the original exercise requirements to explore more advanced approaches, optimize the structure, or test additional edge cases.***
 > 
 > As a result, many of the exercises in this repository significantly exceed the original scope of the course's challenges.
 
