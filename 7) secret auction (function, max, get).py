@@ -1,3 +1,6 @@
+import art
+print(art.logo)
+
 
 print('Welcome to the blind auction!')
 name_amount = {}
