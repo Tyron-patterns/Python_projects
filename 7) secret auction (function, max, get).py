@@ -1,5 +1,17 @@
+
 print('Welcome to the blind auction!')
 name_amount = {}
+
+
+def winning_bid(bidding_dict):
+    max_bet=0
+    winner = ""
+
+    for key in name_amount:
+        if max_bet < bidding_dict[key]:
+            max_bet = bidding_dict[key]
+            winner = key
+    print(f'The winner is {winner} with a bid of ${name_amount[winner]}')
 
 game_on = True
 while game_on:
@@ -15,26 +27,21 @@ while game_on:
             more_bid = False
             break
         elif other_bidders == 'N':
+            winning_bid(name_amount)
             game_on = False
             break
         else:
             print('Please type Y or N')
             continue
 
-def winning_bid(name_amount):
-    max_bet=0
-    winner = ''
-
-    for key in name_amount:
-        if max_bet < name_amount[key]:
-            max_bet = name_amount[key]
-            winner = key
-print(f'The winner is {winner} with a bid of ${name_amount[winner]}')
-
-
 
 print('Welcome to the blind auction!')
 name_amount = {}
+def winning_bid(bidding_dict):
+    winner = max(bidding_dict,key = bidding_dict.get)
+
+print(f'The winner is {winner} with a bid of ${name_amount[winner]}')
+
 
 game_on = True
 
@@ -50,12 +57,11 @@ while game_on:
         if other_bidders == 'Y':
             break  # continue outer loop
         elif other_bidders == 'N':
+            winning_bid(name_amount)
             game_on = False
             break
         else:
             print('Please type Y or N')
 
 # Now determine the winner (outside the input loop!)
-winner = max(name_amount,key = name_amount.get)
 
-print(f'The winner is {winner} with a bid of ${name_amount[winner]}')
